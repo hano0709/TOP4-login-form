@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img id="leaf" src="assets/leaf.jpg" alt="leaf">
+            <div id="bar">
+                <img src="assets/logo.png" alt="logo">
+                <p id="title">ODIN</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <h3>This is not a real online service! You know you need something <br>
+                    like this in your life to 
+                    help you realize your deepest dreams. <br>
+                    Sign Up <em>now</em> to get started.
+                </h3>
+                <h3>You <em>know</em> you want to.</h3>
+            </div>
+            <div class="main">
+                <h3>Let's do this!</h3>
+                <form action="#" method="get" id="sign-up-form">
+                    <div class="names">
+                        <div id="fName">
+                            <label for="first_name">First Name</label>
+                            <br>
+                            <input type="text" id="first_name" placeholder="Hano" required>
+                        </div>
+                        <div id="lName">
+                            <label for="last_name">Last Name</label>
+                            <br>
+                            <input type="text" id="last_name" placeholder="Varghese" required>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div id="mail">
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" id="email" placeholder="example@.com" required>
+                        </div>
+                        <div id="number">
+                            <label for="phone_number">Phone Number</label>
+                            <br>
+                            <input type="text" id="phone_number" placeholder="1234567895" required>
+                        </div>
+                    </div>
+                    <div class="credentials">
+                        <div id="passworddiv">
+                            <label for="user_password">Password</label>
+                            <br>
+                            <input type="password" id="user_password" name="password" placeholder="Enter Password" required minlength="8">
+                        </div>
+                        <div id="confirmPdiv">
+                            <label for="confirmP">Confirm Password</label>
+                            <br>
+                            <input type="password" id="confirmP" placeholder="Re-enter Password" required>
+                        </div>
+                    </div>    
+                    <p></p>                
+                </form>
+            </div>
+            <div class="footer">
+                <button type="submit" form="sign-up-form">Create Account</button>
+                <br>
+                <p>Already have an account? <a href="https://www.google.com">Log in</a></p>
+            </div>   
+        </div>     
+    </div>
+</body>
+</html>
